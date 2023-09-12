@@ -23,3 +23,16 @@ Content-Type: application/json
 {
   "prompt": "youtube, ai"
 }
+
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "8cdf8469-ce60-4267-92c4-72ebb7cf92dd",
+  "template": "Generate short resume of transcription of video about this video: '''{transcription}'''",
+  "temperature": 0.5
+}
