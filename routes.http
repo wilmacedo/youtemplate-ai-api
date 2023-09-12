@@ -13,3 +13,13 @@ Content-Type: audio/mpeg
 
 < ./example.mp3
 --separator--
+
+###
+
+# @name create-transcription
+POST http://localhost:3333/videos/8cdf8469-ce60-4267-92c4-72ebb7cf92dd/transcription
+Content-Type: application/json
+
+{
+  "prompt": "youtube, ai"
+}
